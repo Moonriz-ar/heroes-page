@@ -59,7 +59,7 @@ header h1 {
 main section {
     display: flex;
     justify-content: center;
-    margin: 10rem 0;
+    margin: 20rem 0;
 }
 
 main article {
