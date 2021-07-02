@@ -62,11 +62,14 @@ main section {
     margin: 20rem 0;
 }
 
-main article {
+main .card {
     border-radius: 16px 16px 0 0;
     margin: 0 2rem;
     width: 300px;
     background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
 }
 
 article svg {
@@ -80,6 +83,7 @@ article svg {
     position: absolute;
     top: 126px;
     left: 89px;
+    max-width: 120px;
 }
 
 .card-background {
@@ -104,14 +108,11 @@ article svg {
     padding: 15px 35px;
 }
 
-.card-batman {
+.batman {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;
 }
 
-.card-harley {
+.harley {
     position: relative;
 }
 
