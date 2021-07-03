@@ -42,7 +42,7 @@ header .header-descuentos {
 }
 
 header p {
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 header .header-main {
@@ -51,7 +51,7 @@ header .header-main {
 }
 
 header h1 {
-    padding: 28px;
+    padding: 0.5rem;
 }
 
 /* MAIN */
@@ -59,8 +59,8 @@ header h1 {
 main section {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    margin: 15rem 10rem;
+    margin: 10rem 1rem;
+    flex-wrap: wrap;
 }
 
 main .card {
@@ -132,4 +132,3 @@ footer p {
     color:#FFF9F9;
     padding: 16px;
 }
-
