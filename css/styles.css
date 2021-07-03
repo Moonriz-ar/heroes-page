@@ -122,6 +122,26 @@ article .heart {
     position: relative;
 }
 
+/* ADD BUTTON */
+main {
+    position: relative;
+}
+
+.add-button {
+    text-decoration: none;
+    background-color: #00669F;
+    color: #FFFFFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
 /* FOOTER */
 footer {
     display: flex;
@@ -130,5 +150,12 @@ footer {
 
 footer p {
     color:#FFF9F9;
-    padding: 16px;
+    padding: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+@media all and (max-width: 400px) {
+    .add-button {
+        right: 1rem;
+    }
 }
