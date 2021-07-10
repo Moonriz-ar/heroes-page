@@ -106,10 +106,9 @@ nav a:visited {
 
 /* MAIN */
 
-main section {
-    display: flex;
+.section-card {
     justify-content: center;
-    margin: 10rem 1rem;
+    margin: 10rem 0 1rem 0;
     flex-wrap: wrap;
 }
 
@@ -174,8 +173,9 @@ article .heart {
 
 /* FORM */
 .form {
-    padding: 2rem;
-    align-content: center;
+    margin: 10rem 25vw 1rem 25vw;
+    width: 50vw;
+    align-items: flex-start;
 }
 
 .form h1 {
@@ -183,11 +183,18 @@ article .heart {
 }
 
 .form input,
-.form select {
+.form select,
+.form textarea {
     border: 1px solid black;
     margin: 0.25rem;
     padding: 0.5rem;
     width: 50vw;
+}
+
+.form input::placeholder,
+.form select::placeholder {
+    font-family: 'Karla', sans-serif;
+    color: #000000;
 }
 
 .form input[type="submit"] {
@@ -212,6 +219,10 @@ article .heart {
 
 .form p {
     text-align: center;
+}
+
+.form a:visited {
+    color: #00669F;
 }
 
 /* ADD BUTTON */
