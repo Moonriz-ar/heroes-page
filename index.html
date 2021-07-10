@@ -10,16 +10,24 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Heroes</title>
 </head>
-<body>
-    <header>
+<body class="page-container">
+    <header class="flex-column">
         <section class='header-descuentos'>
-            <p>Descuentos 20%</p>
+            <p>20% de descuento en todos los productos!</p>
         </section>
-        <section class='header-main'>
-            <h1>Heroes</h1>
+        <section class='header-logo flex-row'>
+            <img src="img/ecommerce-logo.svg" alt="">
+            <h2>Nombre Tienda</h2>
         </section>
+        <nav>
+            <ul class="flex-row">
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registrarme</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main class="content-wrap">
         <section>
             <article class='card batman'>
                 <img src="img/heart.svg" alt="" class='heart'>
@@ -65,7 +73,7 @@
         </section>
         <a href="" class='add-button'>+</a>
     </main>
-    <footer>
+    <footer class="flex-row">
         <p>Todos los derechos reservados a FRONT END 1</p>
     </footer>
 </body>
