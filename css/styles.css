@@ -6,6 +6,7 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 a {
@@ -41,6 +42,10 @@ p {
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.center {
+    justify-content: center;
 }
 
 /* HEADER */
@@ -167,6 +172,48 @@ article .heart {
     position: relative;
 }
 
+/* FORM */
+.form {
+    padding: 2rem;
+    align-content: center;
+}
+
+.form h1 {
+    padding: 0 0 2rem 0;
+}
+
+.form input,
+.form select {
+    border: 1px solid black;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    width: 50vw;
+}
+
+.form input[type="submit"] {
+    background-color: #1CD1B0;
+    border-radius: 23px;
+    border: none;
+    align-self: center;
+    font-weight: bold;
+    margin: 2rem 0 1rem 1rem;
+    width: 20vw;
+}
+
+.form input[type="reset"] {
+    background-color: #888888;
+    border-radius: 23px;
+    border: none;
+    align-self: center;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+    width: 20vw;
+}
+
+.form p {
+    text-align: center;
+}
+
 /* ADD BUTTON */
 main {
     position: relative;
@@ -188,21 +235,18 @@ main {
 }
 
 /* FOOTER */
-.page-container {
-    position: relative;
-    min-height: 100vh;
+html, body {
+    height: 100%;
 }
 
-.content-wrap {
-    padding-bottom: 1rem;
+.content {
+    flex: 1 0 auto;
 }
 
 footer {
     background-color: #00669F;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    flex-shrink: 0;
 }
 
 footer p {
