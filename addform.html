@@ -20,28 +20,75 @@
                 <img src="img/ecommerce-logo.svg" alt="">
                 <h2>Nombre Tienda</h2>
             </section>
+            <nav>
+                <ul class="flex-row">
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registro.html">Registrarme</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
         </header>
-        <main class="content-wrap">
-            <section class="add-form">
-                <form action="#">
-                    <h1>Añadí tu super!</h1>
-                    <p>Agregá tu personaje favorito completando las opciones.</p>
-                    <section>
-                        <div class="columna-1">
+        <main>
+            <section class="flex-column form">
+                <h1>Añadí tu super!</h1>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                <div class="flex-row">
+                    <div class="column-1">
+                        <div>
                             <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-    
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
                             <label for="date">Fecha</label>
                             <input type="date" id="date" name="date">
-    
-                            <label for="description"></label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
                         </div>
-                        <div class="columna-2">
-    
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="column-2">
+                        <div>
+                            <label for="species">Especie</label>
+                            <input type="text" id="species" name="species">
                         </div>
-                    </section>
-                </form>
+                        <div>
+                            <label for="photo">Agregar foto</label>
+                            <input type="file" id="photo" name="photo">
+                        </div>
+                        <div>
+                            <p>Poderes</p>
+                            <div class="flex-row">
+                                <input type="checkbox" id="fly" name="powers" value="fly">
+                                <label for="fly">Volar</label>
+                            </div>
+                            <div class="flex-row">
+                                <input type="checkbox" id="intelligence" name="powers" value="intelligence">
+                                <label for="intelligence">Superinteligencia</label>
+                            </div>
+
+                            <div class="flex-row">
+                                <input type="checkbox" id="laser" name="powers" value="laser">
+                                <label for="laser">Vista de rayo láser</label>
+                            </div>
+
+                            <div class="flex-row">
+                                <input type="checkbox" id="wallet" name="powers" value="wallet">
+                                <label for="wallet">Billetera gorda
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Tipo de personaje</p>
+                            <div>
+                                <input type="radio" id="hero" value="hero" name="type">
+                                <label for="hero">Héroe / Heroina</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="villain" value="villain" name="type">
+                                <label for="villain">Villano / Villana</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Añadir">
             </section>
         </main>
     </div>
